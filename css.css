@@ -1,11 +1,11 @@
 :root{
   --Black: rgb(49 45 52);
-  --BlackLigth: rgba(49 45 52/ 20%);
-  --Gray: rgb(94 95 109);
+  --BlackLigth: rgb(112 111 111);
+  --Gray: rgb(161 161 161);
   --White: rgb(255 255 255);
-  --WhiteLigth: rgb(134 115 101);
-  --Yellow: rgb(95 230 88);
-  --WhiteYellow: rgb(193 248 181);
+  --WhiteLigth: rgb(217 212 212);
+  --Yellow: rgb(251 199 22);
+  --WhiteYellow: rgb(249 234 139);
 }
 
   *{
@@ -44,50 +44,142 @@ body{
   justify-content: center;
   align-items: center;
   overflow-y: overlay;
-  background-color: var(----Yellow);
+  background-color: var(--Black);
 }
 .Caveira{
   display: flex;
+  width: 42vw;
+  height: 82vh;
+  align-items: center;
+  justify-content: center;
 }
   .Cranio{
     display: flex;
+    border-radius: 12vw;
+    width: 41vw;
+    height: 68vh;
+    background-color: var(--WhiteLigth);
+    margin-top: -14vh;
+    position: absolute;
+    justify-content: center;
+    z-index: 1;
   }
     .CranioL{
       display: flex;
+      border-radius: 12vw;
+      width: 36vw;
+      height: 54vh;
+      background-color: var(--White);
+      position: absolute;
+      align-items: center;
+      justify-content: center;
+      z-index: 1;
     }
       .Eyes{
         display: flex;
+        width: 32vw;
+        height: 17vh;
+        position: absolute;
+        align-items: center;
+        justify-content: space-between;
+        z-index: 1;
+        margin-top: 17vh;
       }
         .Eye{
           display: flex;
+          width: 10vw;
+          height: 18vh;
+          background-color: var(--Black);
+          border: 6px solid var(--BlackLigth);
+          border-radius: 4vw;
+          justify-content: center;
+          align-items: center;
         }
-          .GloboEye{
+          .Iris{
             display: flex;
+            width: 3vw;
+            height: 3vw;
+            border-radius: 30px;
+            background-color: var(--Yellow);
+            box-shadow: 0px 0px 5px var(--Yellow);
+            justify-content: center;
+            align-items: center;
           }
-            .Iris{
+            .Pupila{
               display: flex;
+              width: 1vw;
+              height: 1vw;
+              border-radius: 30px;
+              background-color: var(--Black);
+              box-shadow: 0px 0px 5px var(--Gray);
             }
-              .Pupila{
-                display: flex;
-              }
 .Naris{
+  width: 8vw;
+  height: 16vh;
+  margin-top: 11vh;
+  position: absolute;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 4;
   display: flex;
 }
   .Nose{
     display: flex;
+    width: 2.5vw;
+    height: 10vh;
+    background-color: var(--Black);
+    z-index: 3;
+    border-radius: 46px;
+    border: 5px solid var(--BlackLigth);
+    transform: rotate(11deg);
   }
+    #NoseB{
+      transform: scale(-1, -1) rotate(-11deg);
+    }
 .Bochexas{
   display: flex;
+  width: 34vw;
+  height: 21vh;
+  margin-top: 23vh;
+  position: absolute;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 3;
 }
   .Bochexa{
     display: flex;
+    width: 11vw;
+    height: 16vh;
+    background-color: var(--WhiteLigth);
+    z-index: 3;
+    border-radius: 3vw;
+    justify-content: center;
   }
     .BochexaL{
-      display: flex;
+      width: 11vw;
+      height: 14vh;
+      background-color: var(--White);
+      z-index: 3;
+      border-radius: 3vw;
     }
 .boca{
   display: flex;
+  border-radius: 3vw;
+  width: 25vw;
+  height: 35vh;
+  background-color: var(--WhiteLigth);
+  margin-top: 43vh;
+  position: absolute;
+  justify-content: center;
+  z-index: 2;
 }
   .bocaL{
     display: flex;
+    border-radius: 4vw;
+    width: 88%;
+    height: 87%;
+    background-color: var(--White);
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
   }
