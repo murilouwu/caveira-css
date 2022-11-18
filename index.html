@@ -10,12 +10,12 @@
 			<div class="CranioL">
 				<div class="Eyes">
 					<div class="Eye">
-						<div class="Iris" id="EyeA">
+						<div class="Iris">
 							<div class="Pupila"></div>
 						</div>
 					</div>
 					<div class="Eye">
-						<div class="Iris" id="EyeB">
+						<div class="Iris">
 							<div class="Pupila"></div>
 						</div>
 					</div>
@@ -39,32 +39,17 @@
 		</div>
 	</div>
 	<script type="text/javascript">
-		let eyeA = document.querySelector('#EyeA');
-		let eyeB = document.querySelector('#EyeB');
-
-		document.addEventListener('mousemove', function(m){
-			var x = m.pageX;
-			var y = m.pageY;
-
-			eyeA.style.marginLeft = (x-1200)+'px';
-			eyeA.style.marginTop = (y-400)+'px';
-
-			eyeB.style.marginLeft = (x+100)+'px';
-			eyeB.style.marginTop = (y+100)+'px';
-		});
-		/*
 		document.querySelector("body").addEventListener("mousemove", eyeball);
 		    function eyeball(){
-			var eye = document.querySelectorAll(".Iris");
+			var eye = document.querySelectorAll(".Eye");
 			eye.forEach(function (eye) {
 			    let x = eye.getBoundingClientRect().left + eye.clientWidth / 2;
 			    let y = eye.getBoundingClientRect().top + eye.clientHeight / 2;
 			    let radian = Math.atan2(event.pageX - x, event.pageY - y);
-			    let rot = radian * (180 / Math.PI) * -1 + 270;
+			    let rot = radian * (180 / Math.PI) * -1 + 260;
 			    eye.style.transform = "rotate("+rot+"deg)";
 		     });
 		}
-	   	*/
 	</script>
 </body>
 </html>
